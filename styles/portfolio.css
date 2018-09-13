@@ -1,0 +1,64 @@
+h4{
+    text-align: center;
+    font-family: DolceVita;
+    color: black;
+    padding-top: 8px;
+    margin-right: -20px;
+    font-size: 22px;
+}
+
+p{
+    color: black;
+    font-size: 18px;
+    padding-top: 3px;
+    margin-right: -20px;
+}
+
+img{
+    position:absolute;
+    border-radius:15px 15px 0px 0px;
+    z-index:1;
+}
+.app{
+    float: left;
+    height: 300px;
+    width: 200px;
+    margin-left: 62px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.textbox{
+    background-color: white;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-color: white;
+    border-width: 3px;
+    border-radius: 15px;
+    width: 154px;
+    top: 195px;
+    overflow: initial;
+    margin-top: 173px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3); 
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom: 35px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: purple;
+    -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.5); 
+    }
+
+}
+
+    
