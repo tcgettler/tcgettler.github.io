@@ -6,41 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thomas Gettler</title>
     <link rel="icon" type="image/jpg" href="./assets/media/logo.jpg">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/global.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/about.css"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    
 </head>
 <body>
-    <!--Create the top menu-->
-    <div class="header">
-        <h1>Thomas Gettler</h1>
-        <!--Create the buttons on the right side-->
-        <div class="menu">
-            <section><a href="./pages/contact.html">Contact</a></section>
-            <!--Create a vertical line-->
-            <div class="vl"></div>
-            <section><a href="./pages/portfolio.html">Portfolio</a></section>
-            <div class="vl"></div>
-            <section id="current">About</section>
+        <div id="aboutModal" class="modal">
+            <div class="modal-content">
+                <div class="container">
+                    <h4>About Thomas Gettler</h4>
+                </div>
+                    <div class="row">
+                        <div class="col s5">
+                            <img src="assets/media/portrait.jpg" class="responsive-img circle left">
+                        </div>
+                        <div class="col s7">
+                            <p>My name is Thomas Gettler.</p>
+                        </div>
+                    </div>
+            </div>
+                <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat modalClose">Close</a>
+            </div>
         </div>
-    </div>    
-
-    <!--Create the content in center of the page -->
-    <div class="subject" >
-        <img src="./assets/media/portrait.png" alt="portrait"/>
-        <h3>About Me:</h3>
-        <!--Create the text box description for about-->
-        <div class="about">
-            <p>Welcome! My name is Thomas Gettler.  I am beginning my journey as a fullstack 
-                developer.  Technology is at a point of building worlds and making dreams come
-                true.  My goal is to become the architect behind these worlds and fulfill 
-                the wishes of the masses searching for new places to explore.
-            </p>
-            <p>While not officially a designer, I feel I bring a unique look that will turn
-                heads and catch the best kind of attention. Along with this, I have the writing
-                skills to ensure that your intent behind the sites you want to convey. 
-            </p>
+        <div id="skillsModal" class="modal">
+                <div class="modal-content">
+                    <div class="container">
+                        <h5 class="center">Languages Experienced In Building Apps With</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col s4 center"><h6>Front End</h6></div>
+                        <div class="col s4 center"><h6>Back End</h6></div>
+                        <div class="col s4 center"><h6>Database</h6></div>
+                    </div>
+                        <div class="row">
+                            <div class="col s4 languages">
+                                <img src="./assets/media/bootstraplogo.png" class="responsive-img left">
+                                <img src="./assets/media/Materialize.png" class="responsive-img left">
+                                <img src="./assets/media/Bulma.png" class="responsive-img left">
+                                <img src="./assets/media/jquery.png" class="responsive-img left">
+                                <img src="./assets/media/reactjs.png" class="responsive-img left">
+                            </div>
+                            <div class="col s4 languages">
+                                <img src="./assets/media/nodejs.png" class="responsive-img left">
+                                <img src="./assets/media/express.png" class="responsive-img left">
+                                <img src="./assets/media/passportjs.png" class="responsive-img left">
+                            </div>
+                            <div class="col s4 languages">
+                                <img src="./assets/media/mysql.png" class="responsive-img left">
+                                <img src="./assets/media/sequelize.png" class="responsive-img left">
+                                <img src="http://www.stickpng.com/assets/images/58481021cef1014c0b5e494b.png" class="responsive-img left">
+                            </div>
+                        </div>
+                </div>
+                    <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat modalClose">Close</a>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col s3 offset-s3 selection valign-wrapper center" id="about">
+               <img src="assets/media/planet1.png" class="planet pulse" id="aboutMenu"> 
+               <span class="colorPulse circle"></span>  
+               <a href="#aboutModal" class="btn-floating btn-large waves-effect waves-light amber pulse scale-transition scale-out amber darken-2 modal-trigger" id="moon"><i class="material-icons">info</i></a> 
+               <a href="#skillsModal" class="btn-floating btn-large waves-effect waves-light amber pulse scale-transition scale-out amber darken-2 modal-trigger" id="moon2"><i class="material-icons">school</i></a> 
+               <a class="btn-floating btn-large waves-effect waves-light scale-transition amber pulse scale-out amber darken-2" id="moon3"><i class="material-icons">description</i></a> 
+            </div>
+            <div class="col s3 selection" id="portfolio">
+                <img src="./assets/media/planet2.png" class="planet" id="portfolioMenu">
+                <a class="btn-floating btn-large waves-effect waves-light scale-transition pink pulse scale-out pink darken-1" id="hcMoon"><img src="assets/media/HappyCamperLogo.png" class="responsive-img circle" ></a>
+                <a class="btn-floating btn-large waves-effect waves-light scale-transition pink pulse scale-out pink darken-1" id="glamMoon"><img src="assets/media/GlamazonLogo.png" class="responsive-img circle" ></a>
+                <a class="btn-floating btn-large waves-effect waves-light scale-transition pink pulse scale-out pink darken-1" id="linkMoon"><img src="assets/media/LinksterLogo.png" class="responsive-img circle" ></a>
+            </div>
+            <div class="col s3 selection" id="contact">
+                <img src="./assets/media/planet3.png" class="planet" id="contactMenu">
+                <a href="https://github.com/tcgettler" target="_blank" class="btn-floating btn-large waves-effect waves-light scale-transition purple pulse scale-out purple accent-2" id="github"><i class="fab fa-github"></i></a> 
+                <a href="http://www.linkedin.com/in/thomasgettler" target="_blank" class="btn-floating btn-large waves-effect waves-light scale-transition purple pulse scale-out purple accent-2" id="linkedIn"><i class="fab fa-linkedin-in"></i></a> 
+            </div>
         </div>  
-    </div>
-</body>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/app.js"></script>
 </html>

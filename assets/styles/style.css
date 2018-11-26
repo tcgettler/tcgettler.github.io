@@ -1,0 +1,103 @@
+body{
+    background-image: url(../media/PortfolioBackground.jpg);
+    background-size:cover;
+    height:100vh;
+    background-repeat: no-repeat;
+}
+
+.selection{
+    position:relative;
+    height:40vh;
+    width: 40vw;
+    padding-left:10vw;
+    margin-top:-20vh;
+}
+
+
+.planet{
+    position:absolute;
+    top:0;bottom:0;left:0;right:0;
+    z-index:3;
+}
+
+#moon{
+    position:absolute;
+    top: 48%;
+    left: -1%;
+    z-index:5;
+}
+
+#moon2{
+    position:absolute;
+    top: 58%;
+    left: 24%;
+    z-index:5;
+}
+
+#moon3{
+    position:absolute;
+    top: 48%;
+    left: 48%;
+    z-index:5;
+}
+
+#hcMoon{
+    position:absolute;
+    top: 48%;
+    left: -1%;
+    z-index:5;
+}
+
+#glamMoon{
+    position:absolute;
+    top: 58%;
+    left: 24%;
+    z-index:5;
+}
+
+#linkMoon{
+    position:absolute;
+    top: 48%;
+    left: 48%;
+    z-index:5;
+}
+
+#linkedIn{
+    position:absolute;
+    top: 48%;
+    left: -1%;
+    z-index:5;
+}
+
+#github{
+    position:absolute;
+    top: 48%;
+    left: 48%;
+    z-index:5;
+}
+
+.modal{
+    background-color:black;
+    border-style: solid;
+    border-top-color: #bbbfb5;
+    border-right-color:#bbbfb5;
+    border-left-color:black;
+    border-bottom-color:black;
+    border-radius: 15px;
+    color:#bbbfb5;
+}
+
+.modal .modal-footer{
+    background-color:black;
+}
+
+.modalClose{
+    color:#bbbfb5;
+}
+
+.languages{
+    height:40vh;
+    overflow-y:auto;
+}
+
+::-webkit-scrollbar {display:none;}
